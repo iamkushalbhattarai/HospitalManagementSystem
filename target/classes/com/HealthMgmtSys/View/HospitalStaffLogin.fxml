@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFDAB9;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.HealthMgmtSys.Controller.HospitalStaffLoginController">
+   <children>
+      <GridPane layoutX="80.0" layoutY="54.0" prefHeight="292.0" prefWidth="480.0" style="-fx-background-color: #00000000;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="97.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="436.0" minWidth="10.0" prefWidth="383.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="50.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="55.0" minHeight="30.0" prefHeight="55.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="30.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="78.0" minHeight="17.0" prefHeight="17.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="63.0" minHeight="2.0" prefHeight="63.0" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="48.0" prefWidth="392.0" text="&quot;Empowering HealthCare, Enhancing Lives: HealthLink's Digital Revolution&quot;" textFill="#264e78" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="20.0" prefWidth="110.0" text="Staff Username" textFill="#362b29" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label prefHeight="18.0" prefWidth="131.0" text="Password" textFill="#4a403e" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="usernameField" prefHeight="26.0" prefWidth="336.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button onAction="#handleLogin" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: #000080;" text="Login" textFill="#eee3e3" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label prefWidth="500.0" text="Welcome to Hospital Staff Portal" textFill="#264e78" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </GridPane>
+      <HBox layoutX="60.0" layoutY="350.0">
+         <children>
+            <Label fx:id="loginErrorLabel" textFill="RED" />
+         </children>
+      </HBox>
+      <Text fill="#264e78" layoutX="179.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Health Management System" textAlignment="CENTER" wrappingWidth="303.64794921875">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

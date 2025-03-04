@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFF8DC;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.HealthMgmtSys.Controller.ViewMedicalInvoiceController">
+    <children>
+        <Label layoutX="250.0" layoutY="61.0" text="Health Management" textFill="#1b166f">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+
+        <VBox alignment="TOP_LEFT" layoutY="114.0" prefHeight="429.0" prefWidth="715.0" spacing="10.0" style="-fx-background-color: #FFE4C4;">
+            <children>
+                <Label text="View Patient Invoice Details" textFill="#a13c3c">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <HBox spacing="10.0">
+                    <children>
+                        <ComboBox fx:id="payDateComboBox" prefWidth="150.0">
+                        </ComboBox>
+                        <Button fx:id="viewPayslipButton" mnemonicParsing="false" onAction="#viewPayslipButtonClicked" text="View Patient invoice by Data" textFill="DARKBLUE" />
+                    </children>
+                </HBox>
+                
+                <Label layoutX="100.0" layoutY="160.0" text="Patient Name" textFill="#3d55e0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <Label fx:id="employeeNameLabel" layoutX="220.0" layoutY="160.0" prefHeight="17.0" prefWidth="257.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <Label text="Patient ID:" textFill="#1729cd" />
+                <Label fx:id="employeeIdLabel" layoutX="220.0" layoutY="190.0" prefHeight="17.0" prefWidth="266.0" />
+                <!-- Deductions -->
+                <Label text="Deductions" textFill="#1729cd">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label text="Medical Related Tax" textFill="#1729cd" />
+                <Label fx:id="taxLabel" layoutX="250.0" layoutY="400.0" prefHeight="17.0" prefWidth="265.0" />
+
+                <Label text="Remaining due for medicine" textFill="#1729cd" />
+                <Label fx:id="unpaidAbsenceLabel" layoutX="250.0" layoutY="430.0" prefHeight="17.0" prefWidth="269.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+
+                <Label text="Overall Hospital Service Due" textFill="#1729cd" />
+                <Label fx:id="netPayLabel" layoutX="250.0" layoutY="470.0" prefHeight="17.0" prefWidth="265.0" />
+            </children>
+        </VBox>
+        <Label layoutX="370.0" layoutY="191.0" text="Billing Date" textFill="#1729cd" />
+        <Label fx:id="payDateLabel" layoutX="434.0" layoutY="191.0" prefHeight="17.0" prefWidth="200.0" />
+
+              <Label layoutX="348.0" layoutY="223.0" prefHeight="17.0" prefWidth="155.0" text="Service Taken Date FromTo" textFill="#1729cd" />
+        <Label fx:id="payPeriodLabel" layoutX="507.0" layoutY="223.0" prefHeight="17.0" prefWidth="174.0" />
+
+
+        <Label layoutX="366.0" layoutY="248.0" textFill="#1729cd">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="370.0" layoutY="292.0" text="Paid total Income:" textFill="#1729cd" />
+        <Label fx:id="grossIncomeLabel" layoutX="473.0" layoutY="292.0" prefHeight="17.0" prefWidth="174.0" />
+
+          <Button fx:id="backToHomeButton" layoutX="6.0" layoutY="74.0" mnemonicParsing="false" onAction="#backToHomeButtonClicked" style="-fx-background-color: #6495ED;" text="Back to Home" textFill="#f0f5f3" />
+      <AnchorPane layoutX="460.0" layoutY="543.0" prefHeight="92.0" prefWidth="200.0">
+         <children>
+              <Button fx:id="logoutButton" layoutX="112.0" layoutY="31.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" textFill="#178021" />
+         </children>
+      </AnchorPane>
+
+
+    </children>
+</AnchorPane>

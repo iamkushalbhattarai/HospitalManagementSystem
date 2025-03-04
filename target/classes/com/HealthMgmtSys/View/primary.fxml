@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.HealthMgmtSys.Controller.PrimaryController">
+    <children>
+      
+        <fx:include source="Patient_login.fxml" />
+      <Text fill="#8c3544" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Are you a  Hospital Staff? Click below to Get Started!&quot;" wrappingWidth="318.98779296875" />
+       
+       
+        <Button fx:id="primaryButton" onAction="#switchToSecondary" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: #4B0082;" text=" Log in to the Hospital Staff Portal" textFill="#FFFFF0" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
